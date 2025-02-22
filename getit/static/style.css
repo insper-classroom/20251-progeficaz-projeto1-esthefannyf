@@ -1,7 +1,6 @@
-/* Estiliza o corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #cc9e84;
+    background-color: #f7e685;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,11 @@ body {
     max-width: 800px;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.container p {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .img {
@@ -43,6 +47,7 @@ body {
     width: 320px;
     text-align: center; 
     margin: 0 auto 30px;
+    font-weight: bold;
 }
 
 
@@ -52,10 +57,11 @@ input[type="text"], input[name="detalhes"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
-    background: #ffcc00;
+    background: #ffcc00f5;
     border: none;
     padding: 12px;
     cursor: pointer;
@@ -74,16 +80,16 @@ ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza as notas */
-    gap: 15px; /* Espaço entre as notas */
+    justify-content: center; 
+    gap: 20px; 
     padding: 0;
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
     max-width: 900px;
 }
 
 ul li {
-    background: #fffa90;
+    background: #faf373;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);

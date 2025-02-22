@@ -1,6 +1,6 @@
-from utils import load_data, load_template, add_new, delete_note
+from utils import load_data, load_template, add_new, delete_note, edit_note, get_note_by_id
 
-from flask import render_template
+
 
 def index():
     note_template = load_template('components/note.html')
@@ -21,3 +21,9 @@ def submit(titulo, detalhes):
 def delete_nota(id):
     nota_id = id
     delete_note(nota_id)
+
+
+def edit(id, titulo, detalhes):
+    updated_note = {'titulo': titulo, 'detalhes': detalhes}
+    edit_note(id, updated_note)
+
